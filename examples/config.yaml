@@ -1,0 +1,21 @@
+#Input file
+
+#system information
+path: "."
+trajectory_file: "example_traj.nc"
+topology_file: "top.top"
+
+#calculation information
+number_of_molecules: 4
+center_atom: "resname Eu"
+micelle_residue_atom: ["resname EMA and type o","resname NIT and type On","resname WAT and type OW","resname WAT and type HW"]
+ion_radius: 15
+cutoff_distances: [0, 3.2, 2.9, 3.2, 0, 0, 0, 0, 2.45, 0, 0, 2.4, 0, 2.35, 0]
+
+#paralelization (to use non-paralelized form ure number_cpu=1)
+number_cpu: 3
+
+#output
+name: "example1"
+
+
