@@ -80,6 +80,6 @@ python aggregate_analysis_v1_0.py
 
 Or use one of the examples:
 
-cd examples/example1
+cd examples/
 
 python run_analysis.py
