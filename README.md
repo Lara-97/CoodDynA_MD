@@ -1,6 +1,6 @@
 **Version:** 1.0.0
 
-# Aggregate Analyzer
+# Coordination Dynamics Analyzer (CoordDynA_MD)
 
 
 
