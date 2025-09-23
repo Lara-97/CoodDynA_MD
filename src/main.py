@@ -7,39 +7,14 @@ from src.plotting import *
 from src.system_loader import *
 import MDAnalysis as mda
 from pathlib import Path
-'''from cerberus import Validator
-from src.config_schema import config_schema'''
+
 
 
 def main(config):
-    '''
-    parser = argparse.ArgumentParser(description="Count the micelles")
-    parser.add_argument("-p","--path",type=str,help="path to the folder with files")
-    parser.add_argument("-tr","--trajectory_file",type=str,help="trajectory file")
-    parser.add_argument("-to","--topology_file",type=str,help="topology file")
-    parser.add_argument("-num_m","--number_of_molecules",type=int,help="number of different molecules in a micelle-including the central ion")
-    parser.add_argument("-c_atom","--center_atom",type=str,help="main ion of the micelle")
-    #parser.add_argument("-m_res","--micelle_atoms",type=list,help="residues that are in the micelles")
-    #parser.add_argument("-m_atom","--micelle_atoms",type=list,help="micelle atom types that are in the micelles")
-    parser.add_argument("-m_res_atom","--micelle_residue_atom",type=str,nargs='+',help="residue in micelle and the atoms that interact -> resname EMA and type o ")
-    parser.add_argument("-i_i", "--ion_ion", type=float,help="selection radius around the central ion -> to select the ligands around the ion, it has to at least cover the first and second sphere")
-    parser.add_argument("-m_dist","--cutoff_distances",type=float,nargs='+',help="cutoff distances between the central ion and the micelle")
-    parser.add_argument("-n_cpu","--number_cpu",type=int,help='number of parallel processes')
-
-    args = parser.parse_args()
-    '''
+    
     with open('config.yaml', 'r') as file:
         config=yaml.safe_load(file)
     
-    '''validator = Validator(config_schema, purge_unknown=True)
-    validator.allow_unknown = False
-    validator.require_all = False
-    validator.validate(config)
-    config = validator.document
-
-    if not validator.validate(config):
-        errors = validator.errors
-        raise ValueError(f"Invalid config file:\n{errors}")'''
     
     #load the path and check if it exists
     path_base=Path(config['path']).expanduser().resolve()
