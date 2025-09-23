@@ -61,7 +61,7 @@ micelle_analysis/
 ## Getting Started
 
 ### 1. Clone the Repository
-git clone https://github.com/lara-97/micelle_analysis.git
+git clone https://github.com/Lara-97/CoodDynA_MD/
 
 cd micelle_analysis
 
