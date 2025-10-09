@@ -1,16 +1,16 @@
 #Input file
 
 #system information
-path: "/Users/lz272585/MD/EMA/dod/Eu/sim/eu_hep_high/one_micelle/"
-trajectory_file: "production_traj_high_last_50_ns.nc"
-topology_file: "top.top"
+path: "/Users/lz272585/MD/EMA/dod/Eu/sim/eu_hep_high/one_micelle/" #path to files
+trajectory_file: "production_traj_high_last_50_ns.nc" #trajectory file
+topology_file: "top.top" #topology file
 
 #calculation information
-number_of_molecules: 4
-center_atom: "resname Eu"
-micelle_residue_atom: ["resname EMA and type o","resname NIT and type On","resname WAT and type OW","resname WAT and type HW"]
-ion_radius: 15
-cutoff_distances: [0, 3.2, 2.9, 3.2, 0, 0, 0, 0, 2.45, 0, 0, 2.4, 0, 2.35, 0]
+number_of_molecules: 4 #number of different molecules present in the system
+center_atom: "resname Eu" #name of the central atom in the aggregates
+micelle_residue_atom: ["resname EMA and type o","resname NIT and type On","resname WAT and type OW","resname WAT and type HW"] #names and types of the atoms coordinating to the central ion
+ion_radius: 15 #radius of calculation around the central ion
+cutoff_distances: [0, 3.2, 2.9, 3.2, 0, 0, 0, 0, 2.45, 0, 0, 2.4, 0, 2.35, 0] #cutoff distances between the central ion and the coordinationg atoms
 
 #paralelization 
 number_cpu: 3 #to use non-paralelized form ure number_cpu=1
