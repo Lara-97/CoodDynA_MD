@@ -7,7 +7,7 @@
 This repository contains a Python-based analysis tool developed to study the formation and structure of molecular aggregates in molecular dynamics (MD) simulations, specifically targeting ion complexes. The code was designed for high-throughput and robust analysis of cation–ligand coordination, aggregate formation, and structural characterization over time.
 
 🧪 This code was developed as a part of scientific publication.
-DOI: 10.1016/j.molliq.2025.128711
+DOI: [10.1016/j.molliq.2025.128711](https://www.sciencedirect.com/science/article/pii/S0167732225018884)
 
 ## What the Code Does
 
